@@ -32,7 +32,6 @@ body {
     color: #616161;
     margin-top: 0.5rem;
 }
-
 /*pokemon card*/
 .items-position {
     width: 80%;
@@ -44,7 +43,13 @@ body {
     font-family: 'Barrio', cursive;
     color: var(--denim);
     text-align: center;
-    margin: 3rem 0;
+    margin: 3rem auto 2rem auto;
+}
+.short-info {
+    width: 80%;
+    font-size: 18px;
+    text-align: justify;
+    margin: 0 auto 3rem auto;
 }
 .card-block {
     background-color: var(--yellow);
@@ -113,8 +118,14 @@ th, td {
 }
 
 @media screen and (max-width: 992px) {
+    .bg-white {
+        height: 100%;
+    }
     .special-pokemon {
         margin: 2rem 0;
+    }
+    .short-info {
+        font-size: 16px;
     }
     .items-position {
         padding-bottom: 3rem;
