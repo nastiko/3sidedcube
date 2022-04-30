@@ -47,25 +47,25 @@ body {
     margin: 3rem 0;
 }
 .card-block {
-    background-color: var(--cyan);
+    background-color: var(--yellow);
     width: 325px;
     height: 365px;
     box-shadow: 0 0 30px 0 rgb(0 0 0 / 30%);
 }
-.card-block .yellow-block {
+.card-block .blue-block {
     width: 300px;
     height: 345px;
-    background-color: var(--dark-yellow);
+    background-color: var(--denim);
     background-image: url(img/bg-pattern.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x: -10px;
+    background-position-x: -25px;
     position: relative;
     top: 11px;
     border-radius: 30px;
     margin: 0 auto;
 }
-.yellow-block .img-position {
+.blue-block .img-position {
     text-align: center;
 }
 .img-position .pokemon-img {
@@ -77,7 +77,7 @@ body {
 .img-position .button-style {
     border: none;
     border-radius: 4px;
-    background-color: var(--denim);
+    background-color: var(--medium-gray);
     font-family: 'Barrio', cursive;
     font-size: 25px;
     color: var(--bs-body-bg);
@@ -106,9 +106,8 @@ th, td {
     color: var(--medium-gray);
 }
 .highlight-power {
-    border: 1px solid var(--bs-yellow);
     border-radius: 5px;
-    background-color: var(--bs-orange);
+    background-color: var(--bs-danger);
     color: var(--bs-white);
     padding: 3px 10px;
 }
@@ -124,7 +123,7 @@ th, td {
         width: 292px;
         margin-bottom: 2rem;
     }
-    .card-block .yellow-block {
+    .card-block .blue-block {
         width: 268px;
         background-position-x: -30px;
     }
@@ -136,7 +135,7 @@ th, td {
     }
 }
 @media screen and (max-width: 360px) {
-    .card-block .yellow-block {
+    .card-block .blue-block {
         width: 245px;
         background-position-x: -50px;
     }
