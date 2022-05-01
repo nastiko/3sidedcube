@@ -27,11 +27,12 @@ body {
     background-color: var(--light-gray);
 }
 .title-pokemon {
-    font-family: "Flexo-Bold",arial,sans-serif;
+    font-family: 'Faustina', serif;
     font-size: 24px;
     color: #616161;
     margin-top: 0.5rem;
 }
+
 /*pokemon card*/
 .items-position {
     width: 80%;
@@ -40,7 +41,9 @@ body {
     margin: 0 auto;
 }
 .special-pokemon {
-    font-family: 'Barrio', cursive;
+    font-family: 'Texturina', serif;
+    font-size: 50px;
+    font-weight: 700;
     color: var(--denim);
     text-align: center;
     margin: 3rem auto 2rem auto;
@@ -48,6 +51,7 @@ body {
 .short-info {
     width: 80%;
     font-size: 18px;
+    font-family: 'Faustina', serif;
     text-align: justify;
     margin: 0 auto 3rem auto;
 }
@@ -83,15 +87,15 @@ body {
     border: none;
     border-radius: 4px;
     background-color: var(--medium-gray);
-    font-family: 'Barrio', cursive;
-    font-size: 25px;
+    font-family: 'Texturina', serif;
+    font-size: 28px;
     color: var(--bs-body-bg);
-    padding: 3px 10px;
+    padding: 0 10px 6px 10px;
 }
 
 /*table*/
 th, td {
-    font-family: "Fira Sans","Trebuchet MS",Ubuntu,Helvetica,Arial sans-serif;
+    font-family: 'Faustina', serif;
     font-size: 16px;
     border-width: 1px 0;
     border-style: solid;
@@ -108,7 +112,8 @@ th, td {
     font-weight: 400;
 }
 .info-point {
-    color: var(--medium-gray);
+    color: var(--black-magic);
+    font-family: 'Athiti', sans-serif;
 }
 .highlight-power {
     border-radius: 5px;

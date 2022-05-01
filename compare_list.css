@@ -1,0 +1,15 @@
+body {
+    background-image: url("img/pattern.png");
+}
+
+/*button to return on main page*/
+.transition-button .click{
+    border: none;
+    background: none;
+    text-decoration: underline 0.15rem rgba(0, 0, 0, 0);
+    transition: text-decoration-color 300ms;
+}
+.transition-button:hover .click {
+    text-decoration-color: rgba(0, 0, 0, 1);
+
+}

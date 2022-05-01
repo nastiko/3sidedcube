@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Roboto Thin", serif;
+    font-family: 'Faustina', serif;
     font-size: 52px;
     color: var(--bs-body-bg);
     text-transform: uppercase;
@@ -38,6 +38,7 @@ input[type="text"] {
     border-radius: 4px 0 0 4px;
     background-color: var(--cylindrical-transparent);
     color: var(--gray);
+    font-family: 'Faustina', serif;
     padding: 5px 10px 5px 15px;
 }
 input[type="text"]:focus {
@@ -91,9 +92,9 @@ input[type="text"]:focus {
     border: none;
     background-color: var(--medium-gray);
     border-radius: 4px;
-    padding: 2px 10px;
+    font-family: 'Texturina', serif;
     color: var(--bs-body-bg);
-    font-family: 'Barrio', cursive;
+    padding: 2px 10px;
 }
 
 /*pagination*/
