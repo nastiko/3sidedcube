@@ -3,6 +3,11 @@ body {
 }
 
 /*button to return on main page*/
+.transition-button {
+    /*position: relative;
+    top: 0;
+    left: 0;*/
+}
 .transition-button .click{
     border: none;
     background: none;
@@ -11,5 +16,99 @@ body {
 }
 .transition-button:hover .click {
     text-decoration-color: rgba(0, 0, 0, 1);
+}
 
+/*position's items in header*/
+.container-fluid.container-items {
+    width: 90%;
+    margin: 0 auto;
+}
+.mini-container {
+    display: flex;
+    align-items: center;
+}
+.mini-container .button-container-position {
+    position: absolute;
+}
+.link-position {
+    margin: 0 auto;
+}
+.heading-style {
+    font-family: 'Faustina', serif;
+    font-size: 45px;
+    text-align: center;
+}
+.container-fluid.cover-container {
+    position: relative;
+}
+
+/*table with pokemons*/
+.show-items {
+    width: 100%;
+    margin: 0 auto;
+}
+.title-point {
+    width: calc(100% / 4);
+    font-family: 'Faustina', serif;
+    font-size: 28px;
+}
+.title-position {
+    padding-left: 5px;
+}
+.info-point {
+    font-family: 'Texturina', serif;
+    font-size: 28px;
+    text-align: center;
+}
+.hr-line-title {
+    width: 50%;
+    border: 1px solid var(--black-magic);
+    margin: 0 0 2rem 0;
+}
+.hr-line {
+    width: 70%;
+    border: 1px solid var(--black-magic);
+    margin: 0 auto 2rem auto;
+}
+
+/*pokemon card*/
+.card-block {
+    background-color: var(--yellow);
+    width: 204px;
+    height: 215px;
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 30%);
+    margin: 0 auto;
+}
+.card-block .blue-block {
+    width: 190px;
+    height: 195px;
+    background-color: var(--denim);
+    background-image: url(img/bg-pattern.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -4px;
+    position: relative;
+    top: 11px;
+    border-radius: 30px;
+    margin: 0 auto;
+}
+.blue-block .img-position {
+    text-align: center;
+}
+.img-position .pokemon-img {
+    width: 186px;
+    height: 191px;
+    position: relative;
+    top: -14px;
+}
+.img-position .button-style {
+    border: none;
+    border-radius: 4px;
+    background-color: var(--medium-gray);
+    position: relative;
+    bottom: 53px;
+    font-family: 'Texturina', serif;
+    font-size: 23px;
+    color: var(--bs-body-bg);
+    padding: 0 10px 6px 10px;
 }
