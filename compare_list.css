@@ -38,8 +38,8 @@ body {
     margin: 0 auto;
 }
 .heading-style {
-    font-family: 'Faustina', serif;
     font-size: 45px;
+    font-weight: 400;
     text-align: center;
 }
 .container-fluid.cover-container {
@@ -56,9 +56,9 @@ main.container-items {
 }
 .title-point {
     width: calc(100% / 3);
-    font-family: 'Athiti', sans-serif;
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 400;
+    color: var(--dim-gray);
 }
 .title-position {
     padding-left: 5px;
@@ -66,8 +66,9 @@ main.container-items {
 .info-point {
     font-family: 'Texturina', serif;
     font-size: 28px;
-    text-align: center;
     font-weight: 500;
+    color: var(--black-magic);
+    text-align: center;
 }
 .title-style {
     font-weight: 600;
@@ -76,7 +77,6 @@ main.container-items {
     width: 50%;
     border: 1px solid var(--black-magic);
     margin: 0 0 20px 0;
-
 }
 .hr-line {
     width: 70%;
@@ -121,7 +121,6 @@ main.container-items {
 }
 .show-info th {
     font-size: 22px;
-    font-family: 'Athiti', sans-serif;
     vertical-align: middle;
     padding-left: 5px;
 }
@@ -137,6 +136,7 @@ main.container-items {
     line-height: 1.2;
 }
 .highlight-power {
+    font-family: 'Texturina', serif;
     border-radius: 5px;
     background-color: var(--bs-danger);
     color: var(--bs-white);

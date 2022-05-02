@@ -104,6 +104,7 @@ th, td {
     font-family: 'Texturina', serif;
 }
 .highlight-power {
+    font-family: 'Texturina', serif;
     border-radius: 5px;
     background-color: var(--bs-danger);
     color: var(--bs-white);
