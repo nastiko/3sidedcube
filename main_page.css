@@ -11,13 +11,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Roboto Thin", serif;
+    font-family: 'Faustina', serif;
     font-size: 52px;
     color: var(--bs-body-bg);
     text-transform: uppercase;
 }
 .img-style {
-    width: 220px;
+    width: 150px;
 }
 
 /*form-search*/
@@ -38,6 +38,7 @@ input[type="text"] {
     border-radius: 4px 0 0 4px;
     background-color: var(--cylindrical-transparent);
     color: var(--gray);
+    font-family: 'Faustina', serif;
     padding: 5px 10px 5px 15px;
 }
 input[type="text"]:focus {
@@ -54,46 +55,38 @@ input[type="text"]:focus {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    /* grid-template-columns: repeat(6, 1fr); */
     justify-content: space-between;
     align-items: center;
     gap: 15px;
     list-style-type: none;
 }
-.block-pokemon .card-block {
+.pokemon-card {
+    width: 145px;
+    height: 175px;
     background-color: var(--yellow);
-    width: 143px;
-    height: 160px;
-    box-shadow: 0 0 30px 0 rgb(0 0 0 / 30%);
+    margin: 0 auto;
+    padding: 5px 8px;
 }
-.card-block .blue-block {
-    width: 125px;
-    height: 146px;
+.pokemon-img {
+    width: 128px;
     background-color: var(--denim);
+    border-radius: 4px;
     background-image: url(img/bg-pattern.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x: -10px;
-    position: relative;
-    top: 7px;
-    border-radius: 30px;
-    margin: 0 auto;
 }
-.blue-block .img-position {
-    text-align: center;
-}
-.img-position .pokemon-img {
-    width: 110px;
-    height: 100px;
-    position: relative;
-    top: 15px;
-}
-.img-position .button-style {
+.name-pokemon {
+    width: 100%;
     border: none;
-    background-color: var(--medium-gray);
     border-radius: 4px;
-    padding: 2px 10px;
+    background-color: var(--medium-gray);
+    font-family: 'Texturina', serif;
+    font-size: 20px;
     color: var(--bs-body-bg);
-    font-family: 'Barrio', cursive;
+    padding-bottom: 3px;
+    margin-top: 4px;
+    text-align: center;
 }
 
 /*pagination*/
@@ -117,17 +110,18 @@ input[type="text"]:focus {
 
 @media screen and (max-width: 992px) {
     .heading-header {
-        font-size: 30px;
+        font-size: 28px;
         text-align: center;
     }
     .img-style {
-        width: 150px;
+        width: 180px;
     }
     input[type="text"] {
         width: 70%;
     }
     .grid-container {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        padding-left: 1rem;
     }
     .pagination-position {
         gap: 10px;
@@ -140,16 +134,11 @@ input[type="text"]:focus {
         font-size: 24px;
     }
 }
-
 @media screen and (max-width: 360px) {
     .heading-header {
         font-size: 24px;
     }
     .img-style {
-        width: 150px;
-    }
-    .grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-        padding-left: 1rem;
+        width: 125px;
     }
 }
