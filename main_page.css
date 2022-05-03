@@ -61,6 +61,10 @@ input[type="text"]:focus {
     gap: 15px;
     list-style-type: none;
 }
+.text-decoration {
+    text-decoration: none;
+    color: transparent;
+}
 .pokemon-card {
     width: 145px;
     height: 175px;
@@ -76,7 +80,7 @@ input[type="text"]:focus {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.name-pokemon {
+.name-card {
     width: 100%;
     border: none;
     border-radius: 4px;
@@ -87,6 +91,7 @@ input[type="text"]:focus {
     padding-bottom: 3px;
     margin-top: 4px;
     text-align: center;
+    text-transform: capitalize;
 }
 
 /*pagination*/
@@ -106,6 +111,42 @@ input[type="text"]:focus {
 .page-link:focus, .color-link:focus {
     color: var(--black-magic);
     box-shadow: 0 0 0 0.1rem rgb(116 105 153 / 25%);
+}
+
+/*compare button*/
+.clean-items{
+    display: none;
+    border: none;
+    background: none;
+    text-decoration: underline 0.15rem rgba(0, 0, 0, 0);
+    transition: text-decoration-color 300ms;
+    font-weight: 500;
+}
+.clean-items:hover {
+    text-decoration-color: rgba(0, 0, 0, 1);
+}
+.button-compare:disabled {
+    display: none;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--very-light);
+    color: var(--medium-light-gray);
+    padding: 10px 15px;
+}
+.button-compare:enabled {
+    display: none;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--black-magic);
+    color: var(--white);
+    padding: 10px 15px;
+}
+.compare-items {
+    position: fixed;
+    inset: auto 3rem 3rem auto;
+}
+.visible {
+    display: inline-block !important;
 }
 
 @media screen and (max-width: 992px) {

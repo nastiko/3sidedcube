@@ -100,7 +100,7 @@ main.container-items {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.name-pokemon {
+.name-card {
     width: 100%;
     border: none;
     border-radius: 4px;
@@ -162,7 +162,7 @@ main.container-items {
     .pokemon-card {
         width: 90%;
     }
-    .name-pokemon {
+    .name-card {
         font-size: 12px;
         padding-bottom: 3px;
         margin-top: 4px;
@@ -186,7 +186,7 @@ main.container-items {
         width: 80%;
         padding: 5px;
     }
-    .name-pokemon {
+    .name-card {
         font-size: 12px;
         padding-bottom: 3px;
         margin-top: 4px;

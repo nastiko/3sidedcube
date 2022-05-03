@@ -12,7 +12,7 @@
     <title>Pokémon</title>
     <script src="/lib/pokeapi.js"></script>
     <script src="/lib/jquery-3.6.0.min.js"></script>
-    <script src="/scripts/pokemon_list.js"></script>
+    <script src="/scripts/pokemon_view.js"></script>
 </head>
 <body>
 <div class="container bg-white">
@@ -21,24 +21,24 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="var(--white)" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
             </svg>
-            <h2 class="title-pokemon">Clefary</h2>
+            <h2 class="title-pokemon">Wartortle</h2>
         </div>
         <div class="style-pagination">
-            <h2 class="title-pokemon">Clefary</h2>
+            <h2 class="title-pokemon">Caterpie</h2>
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="var(--white)" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
             </svg>
         </div>
     </section>
     <main>
-        <h1 class="special-pokemon">Clefary</h1>
+        <h1 class="special-pokemon name-pokemon">Clefary</h1>
         <p class="short-info">This Pokémon's damaging moves have a 10% chance to make the target [flinch]{mechanic:flinch} with each hit if they do not already cause flinching as a secondary effect. This ability does not stack with a held item. Overworld: The wild encounter rate is halved while this Pokémon is first in the party.</p>
         <div class="row items-position">
             <div class="col-lg-6 pokemon-card">
                     <img class="pokemon-img"
                          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png"
                          alt="Clefary">
-                    <div class="name-pokemon">Clefary</div>
+                    <div class="name-card name-pokemon">Clefary</div>
             </div>
             <table class="col-lg-6 mobile-mt">
                 <thead>
@@ -48,39 +48,28 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <th class="title-point">Genger</th>
-                    <td class="info-point">Female</td>
+                    <th class="title-point">Height</th>
+                    <td class="info-point height-pokemon">6</td>
+                </tr>
+                <tr>
+                    <th class="title-point">Weight</th>
+                    <td class="info-point weight-pokemon">75</td>
                 </tr>
                 <tr>
                     <th class="title-point">Type</th>
-                    <td>
-                        <span class="highlight-power">Fairy</span>
-                    </td>
-                </tr>
-                <tr>
-                    <th class="title-point">Height</th>
-                    <td class="info-point">6</td>
-                </tr>
-                <tr>
-                    <th class="title-point">Width</th>
-                    <td class="info-point">75</td>
-                </tr>
-
-                <tr>
-                    <th class="title-point">Level</th>
-                    <td class="info-point">100</td>
+                    <td class="pokemon-type"></td>
                 </tr>
                 <tr>
                     <th class="title-point">Base Experience</th>
-                    <td class="info-point">113</td>
+                    <td class="info-point base-experience-pokemon">113</td>
                 </tr>
                 <tr>
                     <th class="title-point">Abilities</th>
-                    <td class="info-point">Friend-Guard</td>
+                    <td class="pokemon-ability inside-border"></td>
                 </tr>
                 <tr>
-                    <th class="title-point">Natures</th>
-                    <td class="info-point">Attack</td>
+                    <th class="title-point">Held Items</th>
+                    <td class="pokemon-held_items"></td>
                 </tr>
                 </tbody>
             </table>

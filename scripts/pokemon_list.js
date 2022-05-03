@@ -6,25 +6,19 @@ let current_page = 1;
 // generate template for list item given id, name and image url
 function getTemplateListItem(id, name, img) {
     return '<li data-id="' + id + '">\n' +
-        '        <div class="block-pokemon">\n' +
-        '            <input class="checkbox-style" id="' + id + '" value="' + id + '" type="checkbox" name="ckeckbox">\n' +
-        '            <div class="card-block">\n' +
-        '                <div class="blue-block">\n' +
-        '                    <div class="img-position">\n' +
-        '                        <a href="pokemon_page.html?id=' + id + '">\n' +
-        '                            <img class="pokemon-img"\n' +
-        '                                 src="' + img + '"\n' +
-        '                                 alt="' + name + '">\n' +
-        '                            <button class="button-style">' + name + '</button>\n' +
-        '                        </a>\n' +
-        '                    </div>\n' +
-        '                </div>\n' +
-        '            </div>\n' +
-        '        </div>\n' +
-        '    </li>';
+        '       <input class="checkbox-style" id="' + id + '" value="' + id + '" type="checkbox" name="ckeckbox">\n' +
+        '       <a class="text-decoration" href="pokemon_page.html?id=' + id + '">' +
+        '           <div class="pokemon-card">\n' +
+        '                <img class="pokemon-img"\n' +
+        '                     src="' + img + '"\n' +
+        '                     alt="' + name + '">\n' +
+        '                <div class="name-card">' + name + '</div>\n' +
+        '       </a>' +
+        '       </div>\n' +
+        '   </li>';
 }
 
-// load pokemon image gy pokemon id
+// load pokemon image by pokemon id
 async function getImageByPokemonId(pokemonId) {
     // force await till data loaded from remote API
     let pokemon = await P.getPokemonByName(pokemonId);
@@ -58,4 +52,41 @@ $(document).ready(function () {
         //
         container.removeClass('blurred');
     });
+
+    $('.grid-container').on('change', 'input.checkbox-style', function () {
+        let checkedCnt = $('.grid-container input.checkbox-style:checked').length;
+
+        if (checkedCnt > 2) {
+            this.checked = false;
+            checkedCnt -= 1;
+        }
+
+        if (checkedCnt > 0) {
+            $('button.clean-items').addClass("visible");
+            $('button.button-compare').addClass("visible");
+        } else {
+            $('button.clean-items').removeClass("visible");
+            $('button.button-compare').removeClass("visible");
+        }
+
+        $('button.button-compare').text(`Compare (${checkedCnt}/2)`);
+
+        if (checkedCnt === 2) {
+            $('button.button-compare').prop('disabled', false);
+        } else {
+            $('button.button-compare').prop('disabled', true);
+        }
+    });
+
+    $('button.button-compare').on('click', function () {
+        let checked = $('.grid-container input.checkbox-style:checked');
+        let id1 =  checked.first().val();
+        let id2 =  checked.last().val();
+        let url = `compare_list.html?id1=${id1}&id2=${id2}`;
+        window.open(url, '_blank');
+    });
+
 });
+
+
+
